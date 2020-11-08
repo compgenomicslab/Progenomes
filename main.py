@@ -19,7 +19,7 @@ blastdb = "~/data2/Eggnog5_taxID_members/eggnog5_members_annotations_trees/blast
 def analysis(protein_sequence,identity_cutoff,blastdb = blastdb):
 
     """
-        Esta seccion genera una lista con aquellos eggnos que contienen secuencias con genes ortólogos a la secuencia introducida
+        Esta seccion genera una lista con aquellos eggnos que contienen secuencias con genes ortologos a la secuencia introducida
         hasta el cut-off de identidad indicado.
         datos mostrados para cada eggnog:
         -eggnog
