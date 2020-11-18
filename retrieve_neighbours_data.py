@@ -2,7 +2,7 @@ from __future__ import division, print_function
 import json
 from pymongo import MongoClient
 from collections import Counter
-from mongo_client import *
+from .mongo_client import *
 import os,sys
 import time
 import re
