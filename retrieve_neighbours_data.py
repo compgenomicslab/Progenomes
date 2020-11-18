@@ -231,12 +231,12 @@ def function_for_drawn(neighbours_genes_dict_processed,save_path):
      
             for neigh in list_of_neigh:
                 if neigh == "_NA_":
-                    output_file.write("1,"+"_NA_"+","+"100,200,"+"+"+","+"_NA_"+","+"_NA_"+","+"_NA_"+"\n") #Esto es o bien porque el gen no tiene datos en proveniente de progeneomes o el gen no sigue una serie +-1, sino +-5 o +-10
+                    output_file.write("_NA_"+","+"100,200,"+"+"+","+"_NA_"+","+"_NA_"+","+"_NA_"+"\n") #Esto es o bien porque el gen no tiene datos en proveniente de progeneomes o el gen no sigue una serie +-1, sino +-5 o +-10
                
                 else:
                  
                     gene,strand,gene_name,kegg,OG,OG_description = neigh.split("#")
-                    output_file.write("1,"+gene+","+"100,200,"+strand+","+kegg+","+OG+","+OG_description+"\n")
+                    output_file.write(gene+","+"100,200,"+strand+","+kegg+","+OG+","+OG_description+"\n")
 
 
 
